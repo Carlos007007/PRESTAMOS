@@ -29,25 +29,6 @@ $(document).ready(function(){
 			PageConten.addClass('active');
 		}
 	});
-
-	/*  Exit system buttom */
-	$('.btn-exit-system').on('click', function(e){
-		e.preventDefault();
-		Swal.fire({
-			title: 'Are you sure to close the session?',
-			text: "You are about to close the session and exit the system",
-			type: 'question',
-			showCancelButton: true,
-			confirmButtonColor: '#3085d6',
-			cancelButtonColor: '#d33',
-			confirmButtonText: 'Yes, exit!',
-			cancelButtonText: 'No, cancel'
-		}).then((result) => {
-			if (result.value) {
-				window.location="index.html";
-			}
-		});
-	});
     
 });
 (function($){
